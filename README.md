@@ -17,23 +17,15 @@ To develop a Python program to plot a time series data (temperature) by calculat
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
-
 df = pd.read_csv("city_temperature.csv", low_memory=False)
-
-# Remove invalid values
 df = df.dropna(subset=["AvgTemperature"])
-
-# Average temperature by year
 yearly = df.groupby("Year")["AvgTemperature"].mean()
-
 plt.figure(figsize=(10,5))
 plt.plot(yearly.index, yearly.values, marker="o")
-
 plt.title("Year-wise Average Temperature")
 plt.xlabel("Year")
 plt.ylabel("Average Temperature (°F)")
 plt.grid(True)
-
 plt.show()
 ```
 
