@@ -34,4 +34,4 @@ plt.show()
 <img width="1297" height="588" alt="image" src="https://github.com/user-attachments/assets/38a5843e-14e8-42b9-abe4-d1483773eaa4" />
 
 # RESULT:
-TThus, the Python program to plot the time series data of the year-wise average temperature from the given dataset was successfully developed and executed using the Pandas and Matplotlib libraries.
+Thus, the Python program to plot the time series data of the year-wise average temperature from the given dataset was successfully developed and executed using the Pandas and Matplotlib libraries.
